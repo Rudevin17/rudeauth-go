@@ -1,0 +1,3 @@
+# Built binaries
+*.exe
+/example/example
