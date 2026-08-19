@@ -7,6 +7,18 @@ The client embeds only an application id and an Ed25519 **public** key. Every
 response is signed and verified against that key before any field is trusted, so
 a patched binary cannot be talked into a forged "success".
 
+## Set it up with AI
+
+Paste this into Claude Code, Cursor, or any LLM.
+
+```
+Add RudeAuth licensing to my Go app.
+Read https://docs.rudeauth.com/llms.txt for how RudeAuth works, and follow this
+SDK's AGENTS.md rules: no bool is_licensed(), embed the public key, verify before
+trust, no offline cache, and gate real logic into a server-delivered payload.
+My app id is <APP_ID> and my public key is <PUBLIC_KEY>.
+```
+
 ## Install
 
 ```
